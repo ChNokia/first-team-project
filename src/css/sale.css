@@ -1,0 +1,252 @@
+.sale-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 24px;
+}
+
+.sale-whatchs-list {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.sale-whatchs-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 14px;
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 16px;
+    height: 80px;
+    width: 80px;
+    background-color: #f3f3f3;
+}
+
+.sale-whatch-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sale-whatch-current-contaiter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    padding: 49px;/*50 padding - border 1px*/
+    background-color: #f3f3f3;
+}
+
+.sale-whatch-current-img {}
+
+.sale-whatch-current-info {
+    border-radius: 30px;
+    background-color: #3350e9;
+    padding: 48px 28px;
+}
+
+.sale-whatch-current-info-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    margin-bottom: 10px;
+}
+
+.sale-whatch-current-info-id {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.5);
+    margin-bottom: 20px;
+}
+
+.sale-whatch-current-info-price-wrap {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.sale-whatch-current-info-price-1-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 68px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgba(251, 251, 251, 0.1);
+    border-color: transparent;
+}
+
+.sale-whatch-current-info-price-1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+}
+
+.sale-whatch-current-info-price-2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-decoration: line-through;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.sale-whatch-current-info-describe {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.7);
+    margin-bottom: 28px;
+}
+
+    .sale-whatch-current-info-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .sale-whatch-current-info-list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid rgba(251, 251, 251, 0.2);
+        border-radius: 8px;
+        background-color: transparent;
+    }
+    .sale-whatch-current-info-list-item-text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.33;
+        color: #fbfbfb;
+    }
+
+@media screen and (min-width: 768px) {
+    .sale-title {
+        font-size: 48px;
+        line-height: 0.92;
+        margin-bottom: 40px;
+    }
+    
+    .sale-whatchs-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sale-whatchs-list-item {
+        padding: 16px 18px;
+        height: 132px;
+        width: 132px;
+    }
+
+    .sale-whatch-section {
+    }
+
+    .sale-whatch-current-contaiter {
+        padding: 79px 111px;/*padding - border 1px*/
+    }
+
+    .sale-whatch-current-img {}
+
+    .sale-whatch-current-info {
+        padding: 60px;
+    }
+
+    .sale-whatch-current-info-title {
+        max-width: 436px;
+        font-size: 32px;
+        line-height: 1.13;
+    }
+
+    .sale-whatch-current-info-price-wrap {
+        margin-bottom: 30px;
+    }
+
+    .sale-whatch-current-info-price-1-wrap {
+        min-width: 78px;
+    }
+
+    .sale-whatch-current-info-price-1 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .sale-whatch-current-info-price-2 {
+    }
+
+    .sale-whatch-current-info-describe {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+
+    .sale-whatch-current-info-list {
+        max-width: 398px;
+    }
+
+    .sale-whatch-current-info-list-item {
+    }
+
+    .sale-whatch-current-info-list-item-text {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-title {}
+
+    .sale-whatchs-list {}
+
+    .sale-whatchs-list-item {}
+
+    .sale-whatch-section {
+        flex-wrap: nowrap;
+    }
+
+    .sale-whatch-current-section {}
+
+    .sale-whatch-current-contaiter {
+        padding: 79px 49px;/*80 50 padding - border 1px*/
+    }
+
+    .sale-whatch-current-img {}
+
+    .sale-whatch-current-info {
+        max-width: 530px;
+        margin-left: 20px;
+    }
+
+    .sale-whatch-current-info-title {
+        max-width: 389px;
+    }
+
+    .sale-whatch-current-info-id {}
+
+    .sale-whatch-current-info-price-wrap {}
+
+    .sale-whatch-current-info-price-1 {}
+
+    .sale-whatch-current-info-price-2 {}
+
+    .sale-whatch-current-info-describe {}
+
+    .sale-whatch-current-info-list {
+        max-width: 398px;
+    }
+
+    .sale-whatch-current-info-list-item {}
+}

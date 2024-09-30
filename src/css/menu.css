@@ -1,0 +1,181 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility:visible;
+    pointer-events: auto;
+}
+
+.menu-mob-container-wrap.container {
+    padding: 0;
+    position: relative;
+}
+.menu-mob-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 200px;
+    max-height: 812px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/menu/mob/mob-fon@1x.jpg");
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .menu-mob-container {
+        background-image: url("../img/menu/mob/mob-fon@2x.jpg");
+    }
+}
+
+.menu-mob-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close-mobile {
+    stroke-width: 3px;
+    stroke: #fbfbfb;
+    width: 34px;
+    height: 34px;
+}
+
+.menu-mob-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+}
+
+.menu-mob-nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.menu-mob-nav-item:hover,
+.menu-mob-nav-item:focus {
+    color: #3f4385;
+}
+
+.menu-mob-nav-item.current {
+    position: relative;
+    height: 28px;
+}
+
+.menu-mob-nav-item.current::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3350e9;
+    width: 8px;
+    height: 8px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-mob-nav-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 260px;
+    margin-bottom: 40px;
+}
+
+.menu-mob-nav-social-list-item {
+    border: 1px solid rgba(251, 251, 251, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mob-nav-social-list-item:hover,
+.menu-mob-nav-social-list-item:focus,
+.menu-mob-nav-social-list-item:active {
+    border-color: rgba(51, 80, 233, 0.1);
+}
+
+.menu-mob-nav-social-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mob-nav-social-icon {
+    fill: #fbfbfb;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mob-nav-social-list-item:hover .menu-mob-nav-social-icon,
+.menu-mob-nav-social-list-item:focus .menu-mob-nav-social-icon,
+.menu-mob-nav-social-list-item:active .menu-mob-nav-social-icon {
+    fill: #3350e9;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-mob-container {
+        min-width: 330px;
+        max-height: 1024px;
+        background-image: url("../img/menu/tablet/tablet-fon@1x.jpg");
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .menu-mob-container {
+            background-image: url("../img/menu/tablet/tablet-fon@2x.jpg");
+        }
+    }
+
+    .menu-mob-close-btn {
+        right: 32px;
+        top: 26px;
+    }
+
+    .close-mobile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-mob-nav-menu {
+        margin-top: 310px;
+    }
+    .menu-mob-nav-social-list-item {
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu-mob-nav-social-list {
+        margin-top: 350px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -24,11 +28,18 @@ a {
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
+  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+picture {
+  flex-shrink: 0;
+  max-width: 100%;
 }

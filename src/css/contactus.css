@@ -1,0 +1,145 @@
+.contactus-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin-bottom: 24px;
+}
+
+.contactus-content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contactus-form-wrap {
+    border-radius: 30px;
+    background-color: #f3f3f3;
+    padding: 48px 28px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: flex-start; */
+}
+
+.contactus-form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 24px;
+}
+
+.contactus-form {
+    width: 100%;
+}
+
+.contactus-form-input {
+    width: 100%;
+    margin-bottom: 18px;
+    height: 42px;
+    padding: 14px 12px;
+    border: 1px solid rgba(12, 12, 12, 0.15);
+    border-radius: 12px;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactus-form-input:focus-within {
+    border-color: #3350e9;
+}
+
+.contactus-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #0c0c0c;
+}
+
+.contactus-form-textarea {
+    height: 84px;
+    resize: none;
+}
+
+.contactus-form-textarea {
+    margin-bottom: 28px;
+}
+.contactus-btn-input {
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #fbfbfb;
+    border-radius: 16px;
+    border: none;
+    background-color: #3350e9;
+    padding: 12px 50px;
+    min-width: 134px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactus-btn:hover,
+.contactus-btn:focus,
+.contactus-btn:active {
+    background-color: #1f3cd4;
+}
+
+.contactus-img-wrap {
+    border-radius: 30px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contactus-title {
+      font-size: 48px;
+      line-height: 0.92;
+      margin-bottom: 40px;
+    }
+
+    .contactus-content-wrap {
+      gap: 40px;
+    }
+
+    .contactus-form-title {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .contactus-form-input {
+      height: 52px;
+    }
+
+    .contactus-form-wrap {
+        padding: 50px 122px;
+        gap: 32px;
+    }
+
+    .contactus-form-textarea {
+        height: 90px;
+    }
+
+    .contactus-btn {
+      min-width: 160px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .contactus-content-wrap {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .contactus-form-wrap {
+        padding: 50px 60px;
+        /* width: 580px; */
+    }
+
+    .contactus-img-wrap {
+        max-width: 530px;
+    }
+}

@@ -1,0 +1,76 @@
+<section class="section">
+  <div class="container contactus-container" id="contactusid">
+    <h1 class="contactus-title">Contact Us</h1>
+    <div class="contactus-content-wrap">
+      <div class="contactus-form-wrap">
+        <p class="contactus-form-title">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contactus-form">
+          <input
+            class="contactus-form-input"
+            type="text"
+            name="userName"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="contactus-form-input"
+            type="email"
+            name="userEmail"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <input
+            class="contactus-form-input"
+            type="tel"
+            name="userTel"
+            placeholder="+380"
+            title="+380-97-111-11-11"
+            pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+            required
+          />
+          <textarea
+            class="contactus-form-input contactus-form-textarea"
+            name="userComment"
+            placeholder="Comment"
+            rows="4"
+          ></textarea>
+          <button class="contactus-btn-input" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contactus-img-wrap">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/contact_us/desktop/Rectangle_dec_1x-min.jpg  1x,
+              ./img/contact_us/desktop/Rectangle_dec_@2x-min.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/contact_us/tab/Rectangle_tablet_1x-min.jpg  1x,
+              ./img/contact_us/tab/Rectangle_tablet_@2x-min.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/contact_us/mob/Rectangle_mob_1x-min.jpg  1x,
+              ./img/contact_us/mob/Rectangle_mob_@2x-min.jpg 2x
+            "
+          />
+          <img
+            src="./img/contact_us/mob/Rectangle_mob_1x-min.jpg"
+            alt="watch contact us"
+            width="704"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
